@@ -1,9 +1,10 @@
 function [phi2, theta2, psi2] = acc_euler_body(phi, theta, psi, phi1, theta1, psi1, N, I)
-% ACC_EULER_BODY - Compute the second derivatives for the Moon libration
-% angles.
+% ACC_EULER_BODY - Compute the second derivatives for the Euler angles.
 %
 % This method computes the expression in equation (3) of [1] or (8.6)-(8.8) 
-% in [2].
+% in [2]. Note that the references discuss application of the computation
+% only for the Moon but the approach should be applicable for any planet
+% or planetary satellite.
 %
 % Important: This method has not been implemented for performance but for 
 % simplicity and helping with an implementation. 

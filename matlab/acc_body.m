@@ -100,3 +100,4 @@ acc_point = matrix_rot3(-lon_point) * matrix_rot2(lat_point) * acc_point;
 
 % Torque per unit mass is r x acc_point.
 T_body = cross(r_point, acc_point);
+
